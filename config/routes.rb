@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   post 'static/create_user' => 'static#create_user'
 
+  patch 'new_direction' => 'redis_bindings#new_direction'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
